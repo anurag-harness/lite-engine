@@ -275,7 +275,7 @@ type (
 
 func ConvertToFileStatus(s string) FileStatus {
 	switch s {
-	case FileModified:
+	case FileModified
 		return FileModified
 	case FileAdded:
 		return FileAdded
