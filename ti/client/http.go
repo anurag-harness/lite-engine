@@ -87,6 +87,7 @@ type HTTPClient struct {
 
 // Write writes test results to the TI server
 func (c *HTTPClient) Write(ctx context.Context, stepID, report string, tests []*ti.TestCase) error {
+	new_var := 5
 	if err := c.validate(); err != nil {
 		return err
 	}
